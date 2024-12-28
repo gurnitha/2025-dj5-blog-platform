@@ -49,3 +49,14 @@
 
 
 ## 2. Creating Apps
+
+#### 2.1 Creating Apps part 1: Adding features with apps 
+
+        modified:   README.md
+        new file:   apps/blog/__init__.py
+        new file:   apps/blog/admin.py
+        new file:   apps/blog/apps.py
+        new file:   apps/blog/migrations/__init__.py
+        new file:   apps/blog/models.py
+        new file:   apps/blog/tests.py
+        new file:   apps/blog/views.py
