@@ -19,6 +19,11 @@
 				About
 			</a>
 		</li>
+		<li>
+			<a class="{% if section == 'blog_create' %} active {% endif %}" href="{% url 'blog:create' %}">
+				Add new post
+			</a>
+		</li>
 	</ul>
 
 	<hr>

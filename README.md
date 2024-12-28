@@ -254,3 +254,18 @@
 
 
 ## 7. Forms With ModelForm
+
+#### 7.1 Creating posts
+
+        modified:   README.md
+        new file:   apps/blog/forms.py
+        modified:   apps/blog/urls.py
+        modified:   apps/blog/views.py
+        modified:   templates/base.html
+        new file:   templates/blog/create.html
+
+        Note of success: 
+
+        Successfully created new posts.
+
+        :)
