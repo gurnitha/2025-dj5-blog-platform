@@ -143,3 +143,8 @@
         modified:   .gitignore
         modified:   README.md
         new file:   static/css/base.css
+
+#### 4.2 Configuration
+
+        modified:   README.md
+        modified:   config/settings.py
