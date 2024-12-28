@@ -134,3 +134,6 @@
         modified:   README.md
         modified:   templates/base.html
         modified:   templates/blog/home.html
+
+
+## 4. Static Files (CSS)
