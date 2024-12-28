@@ -46,3 +46,6 @@
         Django version 5.1.3, using settings 'config.settings'
         Starting development server at http://127.0.0.1:8000/
         Quit the server with CTRL-BREAK.
+
+
+## 2. Creating Apps
