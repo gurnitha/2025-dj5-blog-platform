@@ -159,3 +159,11 @@
         modified:   README.md
         modified:   apps/blog/views.py
         modified:   templates/base.html
+
+#### 4.5 Create about page
+
+        modified:   README.md
+        modified:   apps/blog/urls.py
+        modified:   apps/blog/views.py
+        modified:   templates/base.html
+        new file:   templates/blog/about.html

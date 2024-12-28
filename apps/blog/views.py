@@ -8,3 +8,8 @@ from django.shortcuts import render
 def home_view(request):
 	data = {'section':'home'}
 	return render(request, 'blog/home.html', data)
+
+
+def about_view(request):
+	data = {'section':'about'}
+	return render(request, 'blog/about.html', data)

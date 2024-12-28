@@ -1,0 +1,13 @@
+<!-- templates/blog/about.html -->
+
+{% extends 'base.html' %}
+{% block title %} {{ block.super }} {{ section }} {% endblock title %}
+
+{% block content %}
+
+	<div class="content">
+		<h2>About page</h2>
+		<p>This page using dynamic page title ...</p>
+	</div>
+
+{% endblock content %}
