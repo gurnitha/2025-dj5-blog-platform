@@ -293,3 +293,6 @@
         modified:   apps/blog/views.py
         new file:   templates/blog/delete.html
         modified:   templates/blog/home.html
+
+
+## 8. Authentication
