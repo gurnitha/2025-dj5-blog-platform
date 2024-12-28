@@ -137,3 +137,9 @@
 
 
 ## 4. Static Files (CSS)
+
+#### 4.1 Adding CSS stylesheets
+
+        modified:   .gitignore
+        modified:   README.md
+        new file:   static/css/base.css
