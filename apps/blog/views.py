@@ -51,6 +51,28 @@ def post_create_view(request):
     return render(request, 'blog/create.html', data)
 
 
+def post_edit_view(request, pk=None):
+    post = get_object_or_404(Post, pk=pk)
+
+    if request.method == 'POST':
+        form = CreatePostForm(request.POST, instance=post)
+        if form.is_valid():
+            form.save()
+            return redirect('blog:detail', slug=post.slug)
+
+    else:
+        form = CreatePostForm(instance=post)
+
+    data = {
+        'title':'Edit post',
+        'section':'blog_edit',
+        'post':post,
+        'form':form,
+    }
+
+    return render(request, 'blog/edit.html', data)
+
+
 def about_view(request):
     data = {'section':'about'}
     return render(request, 'blog/about.html', data)

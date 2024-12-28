@@ -269,3 +269,18 @@
         Successfully created new posts.
 
         :)
+
+#### 7.2 Editing posts
+
+        modified:   README.md
+        modified:   apps/blog/urls.py
+        modified:   apps/blog/views.py
+        modified:   templates/blog/detail.html
+        new file:   templates/blog/edit.html
+        modified:   templates/blog/home.html
+
+        Note of success: 
+
+        Successfully edited posts.
+
+        :)

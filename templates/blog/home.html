@@ -11,6 +11,7 @@
 				<a href="{{ post.get_absolute_url }}">
 					{{ post.title }}
 				</a>
+				[<a href="{% url 'blog:edit' pk=post.pk %}">Edit</a>]
 			</h2>
 			<p>
 				Posted: {{ post.date|date:"M j, Y"}}

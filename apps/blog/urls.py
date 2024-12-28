@@ -11,7 +11,8 @@ app_name = 'blog'
 
 urlpatterns = [
 	path('', views.home_view, name='home'),
-	path('post/create/', views.post_create_view, name='create'), 
+	path('post/create/', views.post_create_view, name='create'),
+	path('post/edit/<int:pk>/', views.post_edit_view, name='edit'), 
 	path('post/<slug:slug>/', views.post_detail_view, name='detail'), 
 	path('about/', views.about_view, name='about'), 
 ]

@@ -5,7 +5,9 @@
 
 {% block content %}
 
-	<h2>{{ post.title }}</h2>
+	<h2>{{ post.title }}
+		[<a href="{% url 'blog:edit' pk=post.pk %}">Edit</a>]
+	</h2>
 	<p>
 		Posted: {{ post.date|date:"M j, Y"}}
 		{% if post.author %}
