@@ -128,3 +128,9 @@
         modified:   README.md
         new file:   templates/base.html
         modified:   templates/blog/home.html
+
+#### 3.3 Block super for page title
+
+        modified:   README.md
+        modified:   templates/base.html
+        modified:   templates/blog/home.html

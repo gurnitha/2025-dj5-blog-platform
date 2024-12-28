@@ -1,12 +1,14 @@
 <!-- templates/blog/home.html -->
 
 {% extends 'base.html' %}
+{% block title %} {{ block.super }} Home {% endblock title %}
 
 {% block content %}
 
 	<div class="content">
 		<h2>Blog title</h2>
 		<p>This page using template inheritance ...</p>
+		<p>This page is now using <span style="font-weight: bold;"> block.super </span> for dynamic page title</p>
 	</div>
 
 {% endblock content %}
