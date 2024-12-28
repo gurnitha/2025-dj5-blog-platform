@@ -122,3 +122,9 @@
 
         modified:   README.md
         modified:   templates/blog/home.html
+
+#### 3.2 Template inheritance
+
+        modified:   README.md
+        new file:   templates/base.html
+        modified:   templates/blog/home.html
