@@ -148,3 +148,8 @@
 
         modified:   README.md
         modified:   config/settings.py
+
+#### 4.3 Load static file in template
+
+        modified:   README.md
+        modified:   templates/base.html
