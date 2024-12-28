@@ -243,3 +243,6 @@
         </a>
 
         Both links has the same results.
+
+
+## 6. ForeignKey And Dates
