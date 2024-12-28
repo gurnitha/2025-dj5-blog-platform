@@ -73,6 +73,28 @@ def post_edit_view(request, pk=None):
     return render(request, 'blog/edit.html', data)
 
 
+def post_delete_view(request, pk=None):
+    post = get_object_or_404(Post, pk=pk)
+
+    if request.method == 'POST':
+        form = CreatePostForm(request.POST, instance=post)
+        if form.is_valid():
+            post.delete()
+            return redirect('blog:home')
+
+    else:
+        form = CreatePostForm(instance=post)
+
+    data = {
+        'title':'Delete post',
+        'section':'blog_delete',
+        'post':post,
+        'form':form,
+    }
+
+    return render(request, 'blog/delete.html', data)
+
+
 def about_view(request):
     data = {'section':'about'}
     return render(request, 'blog/about.html', data)

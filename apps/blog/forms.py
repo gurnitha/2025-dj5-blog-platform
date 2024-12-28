@@ -13,3 +13,10 @@ class CreatePostForm(ModelForm):
 	class Meta:
 		model = Post
 		fields = ['title','body','slug']
+
+
+class DeletePostForm(ModelForm):
+
+	class Meta:
+		model = Post
+		fields = []

@@ -284,3 +284,12 @@
         Successfully edited posts.
 
         :)
+
+#### 7.3 Deleting posts
+
+        modified:   README.md
+        modified:   apps/blog/forms.py
+        modified:   apps/blog/urls.py
+        modified:   apps/blog/views.py
+        new file:   templates/blog/delete.html
+        modified:   templates/blog/home.html
