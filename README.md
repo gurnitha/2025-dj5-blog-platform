@@ -114,3 +114,6 @@
         modified:   README.md
         modified:   config/settings.py
         new file:   templates/blog/home.html
+
+
+## 3. Templates
