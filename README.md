@@ -167,3 +167,6 @@
         modified:   apps/blog/views.py
         modified:   templates/base.html
         new file:   templates/blog/about.html
+
+
+## 5. Models
