@@ -60,3 +60,16 @@
         new file:   apps/blog/models.py
         new file:   apps/blog/tests.py
         new file:   apps/blog/views.py
+
+#### 2.1 Creating Apps part 2: Register the blog app to the project
+
+        modified:   README.md
+        modified:   config/settings.py
+
+        Note error:
+
+        ModuleNotFoundError: No module named 'blog'
+
+        Solution:
+
+        Creating path for apps in settings.py
