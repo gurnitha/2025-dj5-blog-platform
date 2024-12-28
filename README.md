@@ -251,3 +251,6 @@
         modified:   apps/blog/models.py
         modified:   templates/blog/detail.html
         modified:   templates/blog/home.html
+
+
+## 7. Forms With ModelForm
