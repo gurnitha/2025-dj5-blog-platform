@@ -1,0 +1,11 @@
+<!-- templates/blog/detail.html -->
+
+{% extends 'base.html' %}
+{% block title %} {{ block.super }} {{ post }} {% endblock title %}
+
+{% block content %}
+
+	<p>{{ post.title }}</p>
+	<p>{{ post.body }}</p>
+
+{% endblock content %}

@@ -10,6 +10,7 @@ from blog import views
 app_name = 'blog'
 
 urlpatterns = [
-	path('', views.home_view, name='home'), 
+	path('', views.home_view, name='home'),
+	path('post/<slug:slug>/', views.post_detail_view, name='detail'), 
 	path('about/', views.about_view, name='about'), 
 ]

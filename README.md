@@ -222,3 +222,24 @@
         modified:   README.md
         modified:   apps/blog/views.py
         modified:   templates/blog/home.html
+
+#### 5.3 Creating a blog detail page
+
+        new file:   apps/blog/migrations/0002_post_slug.py
+        modified:   apps/blog/models.py
+        modified:   apps/blog/urls.py
+        modified:   apps/blog/views.py
+        new file:   templates/blog/detail.html
+        modified:   templates/blog/home.html
+
+        Note about post detail link:
+
+        <a href="{{ post.get_absolute_url }}">
+        {{ post.title }}
+        </a>
+
+        <a href="{% url 'blog:detail' post.slug %}">
+        {{ post.title }}
+        </a>
+
+        Both links has the same results.
