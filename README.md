@@ -97,3 +97,9 @@
         Note error fixed:
 
         Error fixed.
+
+#### 2.2 Configuring URLs
+
+        modified:   README.md
+        new file:   apps/blog/urls.py
+        modified:   config/urls.py
