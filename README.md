@@ -296,3 +296,35 @@
 
 
 ## 8. Authentication
+
+#### 8.1 Implementing authentication
+
+        (venv312513) λ  pip install django-allauth
+        Collecting django-allauth
+          Downloading django_allauth-65.3.1.tar.gz (1.5 MB)
+             ---------------------------------------- 1.5/1.5 MB 5.9 MB/s eta 0:00:00
+          Installing build dependencies ... done
+          Getting requirements to build wheel ... done
+          Preparing metadata (pyproject.toml) ... done
+        Requirement already satisfied: Django>=4.2.16 in c:\users\ing\desktop\workspace\2025\ex-ebook\django-the-easy-way\venv312513\lib\site-packages (from django-allauth) (5.1.3)
+        Requirement already satisfied: asgiref>=3.8.1 in c:\users\ing\desktop\workspace\2025\ex-ebook\django-the-easy-way\venv312513\lib\site-packages (from django-allauth) (3.8.1)
+        Requirement already satisfied: sqlparse>=0.3.1 in c:\users\ing\desktop\workspace\2025\ex-ebook\django-the-easy-way\venv312513\lib\site-packages (from Django>=4.2.16->django-allauth) (0.5.3) Requirement already satisfied: tzdata in c:\users\ing\desktop\workspace\2025\ex-ebook\django-the-easy-way\venv312513\lib\site-packages (from Django>=4.2.16->django-allauth) (2024.2)
+        Building wheels for collected packages: django-allauth
+          Building wheel for django-allauth (pyproject.toml) ... done
+          Created wheel for django-allauth: filename=django_allauth-65.3.1-py3-none-any.whl size=1659109 sha256=3a41f62a513f9e0998cea45e5062dac3fcaa16d1ced5508d3ae425942242291d
+          Stored in directory: c:\users\ing\appdata\local\pip\cache\wheels\d6\8e\1a\7385ffbef015e4ba18bd9075ac93344f4d3d4d4a6deecf8803
+        Successfully built django-allauth
+        Installing collected packages: django-allauth
+        Successfully installed django-allauth-65.3.1
+
+        modified:   README.md
+        modified:   config/settings.py
+        modified:   config/urls.py
+        modified:   templates/base.html
+
+        Note of success:
+
+        1. First time using django-allauth.
+        2. Sign in, Sign out, Sign up success.
+
+        :)

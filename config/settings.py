@@ -42,6 +42,13 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
+    # django-allauth
+    'django.contrib.sites',
+    'allauth',
+    'allauth.account',
+    'allauth.socialaccount',
+
+
     # My apps
     'blog.apps.BlogConfig',
 ]
@@ -54,6 +61,8 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    # allauth
+    'allauth.account.middleware.AccountMiddleware',
 ]
 
 ROOT_URLCONF = 'config.urls'
@@ -130,6 +139,18 @@ STATIC_URL = 'static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # =================== Added new scripts ===================
+
+'''
+The sites framework creates a default Site object named “example.com”.
+The SITE_ID = 1 setting associates that object with this settings.py file.
+    The sites framework allows you to differentiate between sites in a multi
+    site installation.
+The LOGIN_REDIRECT_URL setting redirects the user to the home page after a
+successful login.
+'''
+# django-allauth
+SITE_ID = 1
+LOGIN_REDIRECT_URL = '/'
 
 # Path for static files
 STATIC_URL = '/static/'
