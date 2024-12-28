@@ -153,3 +153,9 @@
 
         modified:   README.md
         modified:   templates/base.html
+
+#### 4.4 Highlighting active links
+
+        modified:   README.md
+        modified:   apps/blog/views.py
+        modified:   templates/base.html
