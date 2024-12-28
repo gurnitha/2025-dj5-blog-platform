@@ -117,3 +117,8 @@
 
 
 ## 3. Templates
+
+#### 3.1 Templates
+
+        modified:   README.md
+        modified:   templates/blog/home.html
