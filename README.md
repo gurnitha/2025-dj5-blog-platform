@@ -216,3 +216,9 @@
         modified:   apps/blog/admin.py
         new file:   apps/blog/migrations/0001_initial.py
         modified:   apps/blog/models.py
+
+#### 5.2 Listing blog posts
+
+        modified:   README.md
+        modified:   apps/blog/views.py
+        modified:   templates/blog/home.html
