@@ -108,3 +108,9 @@
 
         modified:   README.md
         modified:   apps/blog/views.py
+
+#### 2.4 Creating templates
+
+        modified:   README.md
+        modified:   config/settings.py
+        new file:   templates/blog/home.html
