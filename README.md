@@ -246,3 +246,8 @@
 
 
 ## 6. ForeignKey And Dates
+
+        new file:   apps/blog/migrations/0003_post_author_post_date_post_updated_alter_post_slug.py
+        modified:   apps/blog/models.py
+        modified:   templates/blog/detail.html
+        modified:   templates/blog/home.html

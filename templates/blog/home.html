@@ -12,6 +12,12 @@
 					{{ post.title }}
 				</a>
 			</h2>
+			<p>
+				Posted: {{ post.date|date:"M j, Y"}}
+				{% if post.author %}
+				by {{ post.author|title }}
+				{% endif %}
+			</p>
 			<p>{{ post.pk }} : {{ post.body }}</p>
 		{% endfor %}
 	</div>

@@ -4,19 +4,26 @@
 from django.db import models
 from django.urls import reverse
 from django.utils.text import slugify
+from django.contrib.auth.models import User 
 
 # Create your models here.
 
 
 class Post(models.Model):
     title = models.CharField(default='', max_length=255)
-    body = models.TextField(default='', blank=True)
     slug = models.SlugField(
             default='', 
             max_length=255, 
             blank=True,
             help_text='Live it blank. It will be automatically fill in once post title is added.')
-
+    body = models.TextField(default='', blank=True)
+    author = models.ForeignKey(
+            User, 
+            on_delete=models.CASCADE,
+            blank=True,
+            null=True)
+    date = models.DateTimeField(auto_now_add=True, null=True)
+    updated = models.DateTimeField(auto_now=True)
     def __str__(self):
         return self.title
 
