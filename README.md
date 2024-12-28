@@ -103,3 +103,8 @@
         modified:   README.md
         new file:   apps/blog/urls.py
         modified:   config/urls.py
+
+#### 2.3 Creating views
+
+        modified:   README.md
+        modified:   apps/blog/views.py
