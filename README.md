@@ -488,3 +488,6 @@
         2. It created new images with smaller size
 
         :)
+
+
+## 13. Context processors: Latest posts
