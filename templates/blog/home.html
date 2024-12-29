@@ -5,14 +5,29 @@
 
 {% block content %}
 
+ <!-- here-->
+ <!-- <p>{{ perms.blog }}</p> -->
+ 
 	<div class="content">
 		{% for post in posts %}
 			<h2>
 				<a href="{{ post.get_absolute_url }}">
 					{{ post.title }}
 				</a>
-				[<a href="{% url 'blog:edit' pk=post.pk %}">Edit</a>]
-				[<a href="{% url 'blog:delete' pk=post.pk %}">Delete</a>]
+				<!-- [<a href="{% url 'blog:edit' pk=post.pk %}">Edit</a>]
+				[<a href="{% url 'blog:delete' pk=post.pk %}">Delete</a>] -->
+				<!-- Checking permissions as staff -->
+				{% if perms.blog.change_post %}
+				[ <a href="{% url 'blog:edit' pk=post.pk %}">
+				Edit
+				</a> ]
+				{% endif %}
+				<!-- Checking permissions as staff-->
+				{% if perms.blog.delete_post %}
+				[ <a href="{% url 'blog:delete' pk=post.pk %}">
+				Delete
+				</a> ]
+				{% endif %}
 			</h2>
 			<p>
 				Posted: {{ post.date|date:"M j, Y"}}

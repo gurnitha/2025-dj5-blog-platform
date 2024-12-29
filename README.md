@@ -355,3 +355,10 @@
         4. Try to login
 
         :)
+
+#### 9.2 Checking permissions in templates
+
+        modified:   README.md
+        modified:   templates/blog/home.html
+
+        :)
