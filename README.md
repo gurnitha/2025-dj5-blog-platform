@@ -430,3 +430,6 @@
         modified:   templates/blog/home.html
 
         :)
+
+
+## 12. Images
