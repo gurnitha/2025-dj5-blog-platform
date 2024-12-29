@@ -8,6 +8,8 @@ from django.contrib.auth.models import User
 
 # Third party modules
 from taggit.managers import TaggableManager
+from imagekit.models import ImageSpecField
+from pilkit.processors import ResizeToFill
 
 # Create your models here.
 
@@ -25,10 +27,17 @@ class Post(models.Model):
             on_delete=models.CASCADE,
             blank=True,
             null=True)
+    # Image
     image = models.ImageField(
         default='',
         blank=True,
         upload_to='images')
+    # Image thumbnail
+    image_thumbnail = ImageSpecField(
+        source='image',
+        processors=[ResizeToFill(700, 150)],
+        format='JPEG',
+        options={'quality': 60})
     date = models.DateTimeField(auto_now_add=True, null=True)
     updated = models.DateTimeField(auto_now=True)
 

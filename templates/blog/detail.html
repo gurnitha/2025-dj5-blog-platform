@@ -14,12 +14,17 @@
 		by {{ post.author|title }}
 		{% endif %}
 	</p>
-	<p>{{ post.body }}</p>
 
 	<!-- Images -->
-	{% if post.image %}
+	<!-- 	{% if post.image %}
 		<img class="post-img" src="{{ post.image.url }}" height="100">
+	{% endif %} -->
+
+	<!-- Image thumbnail -->
+	{% if post.image %}
+		<img class="post-img" src="{{ post.image_thumbnail.url }}">
 	{% endif %}
+	<p>{{ post.body }}</p>
 
 	{% if post.tags %}
 	<div class="tags">

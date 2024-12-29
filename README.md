@@ -472,3 +472,19 @@
         new file:   media/images/banner03.jpg
 
         :)
+
+#### 12.2 Processing images
+
+        modified:   apps/blog/models.py
+        new file:   media/CACHE/images/images/banner02/6433aa218d4639b9779efec74db1d698.jpg
+        new file:   media/CACHE/images/images/banner03/0f1562d8e5fc1c2ed663e9bde2d3323a.jpg
+        new file:   media/CACHE/images/images/color1/f8e801ae1d584d57e8dbf39566f68bd2.jpg
+        new file:   media/images/color1.PNG
+        modified:   templates/blog/detail.html
+
+        Note:
+
+        1. It created a new folder: media/CHACHE/images/...
+        2. It created new images with smaller size
+
+        :)
