@@ -337,3 +337,7 @@
         Note:
 
         It uses allauth in the venv312513.
+
+
+## 9. Authorization
+
