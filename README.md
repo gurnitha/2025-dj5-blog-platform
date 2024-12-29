@@ -491,3 +491,22 @@
 
 
 ## 13. Context processors: Latest posts
+
+#### 13.1 Context processors - Showing some latest posts
+
+        modified:   README.md
+        # 1. Create context processors
+        new file:   apps/blog/context_processors.py
+        # 2. Register to settings.py
+        modified:   config/settings.py
+        # 3. Create post list file
+        new file:   templates/inc/_post_list.html  
+        # 4. Include _post_list to base.html
+        modified:   templates/base.html
+        # 5. Testing: open the browser
+
+        Results:
+
+        Latest posts display on every page
+
+        :)
