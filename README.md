@@ -328,3 +328,12 @@
         2. Sign in, Sign out, Sign up success.
 
         :)
+
+#### 8.2 Overriding templates
+
+        modified:   README.md
+        new file:   templates/account/login.html
+
+        Note:
+
+        It uses allauth in the venv312513.
