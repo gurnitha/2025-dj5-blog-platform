@@ -341,3 +341,17 @@
 
 ## 9. Authorization
 
+#### 9.1 Assigning permissions with groups
+
+        modified:   README.md
+
+        # Login to admin panel as superuser
+        1. Create a new group: Editor
+        2. Add permissions:
+        - Can add post
+        - Can change post
+        - Can delete post
+        3. Create a new user: test + Staff status + Chosen group: Editor
+        4. Try to login
+
+        :)
