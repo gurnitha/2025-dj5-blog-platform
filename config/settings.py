@@ -48,6 +48,7 @@ INSTALLED_APPS = [
     'allauth.account',
     'allauth.socialaccount',
     'taggit',
+    'imagekit',
 
 
     # My apps
@@ -156,5 +157,9 @@ LOGIN_REDIRECT_URL = '/'
 # Path for static files
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static'),]
+
+# Path for media files
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 # =================== Added new scripts ===================

@@ -433,3 +433,42 @@
 
 
 ## 12. Images
+
+#### 12.1 Uploading images
+
+        # PART 1: SETUP FOR UPLOADING IMAGES
+
+        # 1. Install pillow
+        (venv312513) λ pip install pillow
+        # 2. Install django-imagekit
+        (venv312513) λ pip install django-imagekit
+        # 3. Register django-imagekit to settings.py
+        #    and set path for media files 
+        modified:   config/settings.py
+        # 4. Add path for media files
+        modified:   config/urls.py
+        modified:   README.md
+        # 5. Add image field to Post model
+        modified:   apps/blog/models.py
+        # 6. Display image
+        modified:   templates/blog/detail.html
+        # 7. Run migrations
+        new file:   apps/blog/migrations/0005_post_image.py
+
+        # PART 2: UPLOADING IMAGES
+
+        # 1. Add image field to form
+        modified:   apps/blog/forms.py
+        # 2. Add request.FILES as an argument to the PostForm constructor:
+        modified:   apps/blog/views.py
+        # 3. Modify form by adding  enctype="multipart/form-data"
+        modified:   templates/blog/create.html
+        # 4. Modify form by adding  enctype="multipart/form-data"
+        modified:   templates/blog/edit.html
+
+        # 5. Update posts from frontend
+        new file:   media/images/banner01.jpg
+        new file:   media/images/banner02.jpg
+        new file:   media/images/banner03.jpg
+
+        :)

@@ -65,7 +65,7 @@ def post_create_view(request):
 
     # Handling POST request
     if request.method == 'POST':
-        form = CreatePostForm(request.POST)
+        form = CreatePostForm(request.POST, request.FILES)
         if form.is_valid():
             post = form.save(commit=False)
             post.author = request.user
@@ -90,7 +90,7 @@ def post_edit_view(request, pk=None):
     post = get_object_or_404(Post, pk=pk)
 
     if request.method == 'POST':
-        form = CreatePostForm(request.POST, instance=post)
+        form = CreatePostForm(request.POST, request.FILES ,instance=post)
         if form.is_valid():
             form.save()
             return redirect('blog:detail', slug=post.slug)
