@@ -423,3 +423,10 @@
         modified:   README.md
         modified:   apps/blog/views.py
         new file:   templates/inc/_pagination.html
+
+#### 11.2 Including templates
+
+        modified:   README.md
+        modified:   templates/blog/home.html
+
+        :)

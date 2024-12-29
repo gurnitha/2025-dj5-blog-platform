@@ -39,5 +39,10 @@
 			<p>Posts tagged with <strong>"{{ tag.name }}"</strong></p>
 		{% endif %}
 	</div>
-		
+	
+	{% include 'inc/_pagination.html' with items=posts %}
+	<!-- 
+	The include template tag is used to “include” the _pagination.html
+	template within the home.html template. We pass in the posts object (and the pagination data with it) using the items=posts keyword argument.
+	 -->
 {% endblock content %}
