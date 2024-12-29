@@ -19,11 +19,15 @@
 				About
 			</a>
 		</li>
+		
+		{% if perms.blog.add_post %}
 		<li>
 			<a class="{% if section == 'blog_create' %} active {% endif %}" href="{% url 'blog:create' %}">
 				Add new post
 			</a>
 		</li>
+		{% endif %}
+		
 		<li>
 		 {% if not user.is_authenticated %}
 		 	<a href="{% url 'account_login' %}">Sign in</a>

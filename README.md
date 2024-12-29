@@ -362,3 +362,13 @@
         modified:   templates/blog/home.html
 
         :)
+
+#### 9.3 Restricting access to views
+
+        modified:   README.md
+        # Added required decoreator to create, edit, delete views
+        modified:   apps/blog/views.py
+        # Hide the 'Add new post' menu to un-authorized user
+        modified:   templates/base.html
+
+        :)

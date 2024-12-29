@@ -2,6 +2,7 @@
 
 # Django modules
 from django.shortcuts import render, get_object_or_404, redirect
+from django.contrib.auth.decorators import permission_required
 
 # My modules
 from blog.models import Post 
@@ -27,6 +28,7 @@ def post_detail_view(request, slug=None):
     return render(request, 'blog/detail.html', data)
 
 
+@permission_required('blog.create', raise_exception=True)
 def post_create_view(request):
 
     # Handling POST request
@@ -51,6 +53,7 @@ def post_create_view(request):
     return render(request, 'blog/create.html', data)
 
 
+@permission_required('blog.edit', raise_exception=True)
 def post_edit_view(request, pk=None):
     post = get_object_or_404(Post, pk=pk)
 
@@ -73,6 +76,7 @@ def post_edit_view(request, pk=None):
     return render(request, 'blog/edit.html', data)
 
 
+@permission_required('blog.delete', raise_exception=True)
 def post_delete_view(request, pk=None):
     post = get_object_or_404(Post, pk=pk)
 
