@@ -417,3 +417,9 @@
 
 
 ## 11. Pagination
+
+#### 11.1 Paginator class
+
+        modified:   README.md
+        modified:   apps/blog/views.py
+        new file:   templates/inc/_pagination.html

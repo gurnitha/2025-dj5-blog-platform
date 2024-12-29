@@ -3,6 +3,7 @@
 # Django modules
 from django.shortcuts import render, get_object_or_404, redirect
 from django.contrib.auth.decorators import permission_required
+from django.core.paginator import Paginator
 
 # Third party module
 from taggit.models import Tag
@@ -22,6 +23,24 @@ def home_view(request, tag=None):
     else:
         tag_obj = get_object_or_404(Tag, slug=tag)
         posts = Post.objects.filter(tags__in=[tag_obj])
+
+    # Pagination
+    '''
+    The Paginator class allows us to split a QuerySet into parts. Pass in the
+     objects you want paginate and the number of items you would like to have
+     on each page.
+    '''
+    paginator = Paginator(posts, 1)
+    '''
+    We use request.GET.get('page') to get the current page
+    number. The page parameter is assigned using a Query string (?page=1). 
+    '''
+    page = request.GET.get('page')
+    '''
+    The posts = paginator.get_page(page) line makes the page items 
+    available through the posts object.
+    '''
+    posts = paginator.get_page(page)
 
     data = {
         'section':'home',

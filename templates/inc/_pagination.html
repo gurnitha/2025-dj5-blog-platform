@@ -1,0 +1,25 @@
+<div class="pagination">
+	{% if posts.has_previous %}
+		<a href="?page=1">First</a>
+		<a href="?page={{ posts.previous_page_number }}">Previous</a>
+	{% endif %}
+		<span>{{ posts.number }}</span>
+		<span>of</span>
+		<span>{{ posts.paginator.num_pages }}</span>
+	{% if posts.has_next %}
+		<a href="?page={{ posts.next_page_number }}">Next</a>
+		<a href="?page={{ posts.paginator.num_pages }}">Last</a>
+	{% endif %}
+</div>
+
+<!-- 
+The posts object works the same as before for listing items but we also have some extra functionality available. These are the variables we use in the _pagination.html template file:
+
+• posts.has_previous is True when there are previous pages.
+• posts.previous_page_number stores the previous page number.
+• posts.number stores the current page number.
+• posts.paginator.num_pages stores the total number of pages.
+• posts.has_next is True when there are more pages to browse after the
+current page.
+• posts.next_page_number stores the number for the next page.
+-->
