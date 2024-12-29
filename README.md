@@ -403,3 +403,14 @@
         modified:   README.md
 
         :)?
+
+#### 10.2 Filtering blog posts by a tag
+
+        modified:   README.md
+        modified:   apps/blog/urls.py
+        modified:   apps/blog/views.py
+        modified:   templates/base.html
+        modified:   templates/blog/detail.html
+        modified:   templates/blog/home.html
+
+        :)

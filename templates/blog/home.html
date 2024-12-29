@@ -7,7 +7,7 @@
 
  <!-- here-->
  <!-- <p>{{ perms.blog }}</p> -->
- 
+
 	<div class="content">
 		{% for post in posts %}
 			<h2>
@@ -18,15 +18,11 @@
 				[<a href="{% url 'blog:delete' pk=post.pk %}">Delete</a>] -->
 				<!-- Checking permissions as staff -->
 				{% if perms.blog.change_post %}
-				[ <a href="{% url 'blog:edit' pk=post.pk %}">
-				Edit
-				</a> ]
+					[<a href="{% url 'blog:edit' pk=post.pk %}">Edit</a>]
 				{% endif %}
 				<!-- Checking permissions as staff-->
 				{% if perms.blog.delete_post %}
-				[ <a href="{% url 'blog:delete' pk=post.pk %}">
-				Delete
-				</a> ]
+					[<a href="{% url 'blog:delete' pk=post.pk %}">Delete</a>]
 				{% endif %}
 			</h2>
 			<p>
@@ -35,8 +31,13 @@
 				by {{ post.author|title }}
 				{% endif %}
 			</p>
-			<p>{{ post.pk }} : {{ post.body }}</p>
+			<p>{{ post.pk }} : {{ post.body|truncatewords:15 }}</p>
 		{% endfor %}
 	</div>
-
+	<div>
+		{% if tag %}
+			<p>Posts tagged with <strong>"{{ tag.name }}"</strong></p>
+		{% endif %}
+	</div>
+		
 {% endblock content %}

@@ -4,18 +4,31 @@
 from django.shortcuts import render, get_object_or_404, redirect
 from django.contrib.auth.decorators import permission_required
 
+# Third party module
+from taggit.models import Tag
+
 # My modules
 from blog.models import Post 
 from blog.forms import CreatePostForm
 
 # Create your views here.
 
-def home_view(request):
-    posts = Post.objects.all()
+def home_view(request, tag=None):
+    tag_obj = None
+
+    if not tag:
+        posts = Post.objects.all()
+
+    else:
+        tag_obj = get_object_or_404(Tag, slug=tag)
+        posts = Post.objects.filter(tags__in=[tag_obj])
+
     data = {
         'section':'home',
         'posts':posts,
+        'tag': tag_obj,
     }
+
     return render(request, 'blog/home.html', data)
 
 
