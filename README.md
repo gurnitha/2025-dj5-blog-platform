@@ -414,3 +414,6 @@
         modified:   templates/blog/home.html
 
         :)
+
+
+## 11. Pagination
