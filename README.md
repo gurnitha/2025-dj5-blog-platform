@@ -375,3 +375,31 @@
 
 
 ## 10. Tagging
+
+#### 10.1 Tagging blog posts
+
+        # 1. Install django_taggit
+        (venv312513) λ pip install django_taggit
+        ...
+        Successfully installed django_taggit-6.1.0
+
+        # 2. Register django_taggit
+        modified:   config/settings.py
+
+        # 3. Add tagable manager
+        modified:   apps/blog/models.py
+
+        # 4. Add tags field to form
+        modified:   apps/blog/forms.py
+
+        # 5. Run migration
+        new file:   apps/blog/migrations/0004_post_tags.py
+        
+        # 6. Testing
+        - Tags added to post
+        - Tags save to admin panel
+        - But tags not added to Post filed in admin panel
+
+        modified:   README.md
+
+        :)?

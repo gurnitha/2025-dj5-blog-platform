@@ -6,6 +6,9 @@ from django.urls import reverse
 from django.utils.text import slugify
 from django.contrib.auth.models import User 
 
+# Third party modules
+from taggit.managers import TaggableManager
+
 # Create your models here.
 
 
@@ -24,6 +27,9 @@ class Post(models.Model):
             null=True)
     date = models.DateTimeField(auto_now_add=True, null=True)
     updated = models.DateTimeField(auto_now=True)
+
+    tags = TaggableManager()
+
     def __str__(self):
         return self.title
 

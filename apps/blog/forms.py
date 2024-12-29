@@ -12,7 +12,7 @@ class CreatePostForm(ModelForm):
 
 	class Meta:
 		model = Post
-		fields = ['title','body','slug']
+		fields = ['title','body','slug','tags']
 
 
 class DeletePostForm(ModelForm):
